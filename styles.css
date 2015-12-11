@@ -1,49 +1,92 @@
-html {
-    /* Needed to fix footer at bottom of browser */
-    position: relative;
-    min-height: 100%;
-}
-
-.navbar-inverse {
-    background-color: #000000;
-    border-color: #000000;
-}
-
-.navbar-inverse,
-.navbar-brand {
-    color: #ffffff;
-}
-
-navbar-inverse,
-.btn {
-    background-color: #000000;
-    color: #000000;
-}
-body {
-    /* Move down content because of fixed navbar at top */
-    padding-top: 50px;
-    /* Set margin bottom allow for footer height */
-    margin-bottom: 50px;
-    background-image: url(images/dark.jpg);
-    background-color: #000000;
+    html {
+        /* Needed to fix footer at bottom of browser */
+        position: relative;
+        min-height: 100%;
+    }
     
-}
-
-#main {
-    background-color: silver;
-    padding-top: 100px;
-    padding-right: 0px;
-    padding-left:0px;
-    padding-bottom: 280px;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #000000;
-    color: #000000;
-    text-align: center;
-    padding: 15px;
-}
+    .navbar-inverse {
+        background-color: #000000;
+        border-color: #000000;
+    }
+    
+    .navbar-inverse,
+    .navbar-brand {
+        color: #ffffff;
+    }
+    
+    navbar-inverse,
+    .btn {
+        background-color: #000000;
+        color: #000000;
+    }
+    
+    body {
+        /* Move down content because of fixed navbar at top */
+        padding-top: 50px;
+        /* Set margin bottom allow for footer height */
+        margin-bottom: 50px;
+        background-image: url(images/dark.jpg);
+        background-color: #000000;
+    }
+    
+    #main {
+        background-color: silver;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 350px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #000000;
+        color: #000000;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    #gallery {
+        position: relative;
+        height: auto;
+    }
+    
+    #gallery img {
+        float: none;
+        padding: 0;
+    }
+    
+    #placeholder {
+        position: relative;
+        top: 0px;
+        left: 50px;
+    }
+    
+    #gallery li {
+        display: inline;
+        float: left;
+        padding-bottom 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    
+    #gallery a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-style: italic;
+    }
+    
+    #gallery a:hover span {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        text-align: center;
+    }
+    
+    #gallery span {
+        display: none;
+    }
