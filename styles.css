@@ -54,8 +54,7 @@
     }
     
     #gallery img {
-        float: none;
-        padding: 0;
+        float: right;
     }
     
     #placeholder {
@@ -90,3 +89,39 @@
     #gallery span {
         display: none;
     }
+    
+    .col-xs-6 {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+@media only screen and (max-width: 768px) {
+#wordlinks {
+    display:none;
+}
+}
+@media only screen and (max-width: 700px) {
+     #gradpic {
+        display: none;
+    }
+}
+                        	     
+@media only screen and (max-width: 480px) {
+    #gallery img {
+        display: none;
+    }
+    #gradpic {
+        display: none;
+    }
+    #veggies {
+        display:none;
+    }
+   
+}
+
+
+
+
+
+
+
+
